@@ -9,8 +9,25 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import java.io.IOException;
 
-public class WordCount  {
-    public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException {
+/**
+ * WordCount.
+ */
+public final class WordCount  {
+    /**
+     * Constructor.
+     */
+    private WordCount() {
+
+    }
+    /**
+     * main.
+     * @param args arguments
+     * @throws InterruptedException Exception
+     * @throws IOException Exception
+     * @throws ClassNotFoundException Exception
+     */
+    public static void main(final String[] args)
+            throws InterruptedException, IOException, ClassNotFoundException {
 
         Job job = Job.getInstance();
         job.setJobName("com.epam.mapreduce.WordCount");
